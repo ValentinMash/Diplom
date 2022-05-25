@@ -2,7 +2,7 @@
 //  PhotosViewController.swift
 //  Navigation
 //
-//  Created by Ilya on 21.03.2022.
+//  Created by Valentin Mashutin on 14.05.2022.
 //
 
 import UIKit
@@ -117,6 +117,4 @@ extension PhotosViewController: UICollectionViewDelegate, UICollectionViewDelega
         let spacing = (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.minimumInteritemSpacing
         return self.itemSize(for: collectionView.frame.width, with: spacing ?? 0)
     }
-    
-    
 }

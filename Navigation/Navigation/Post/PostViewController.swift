@@ -79,7 +79,6 @@ class PostViewController: UIViewController {
         if let keyWindow = UIApplication.shared.connectedScenes.compactMap({ $0 as? UIWindowScene }).flatMap({ $0.windows }).first(where: { $0.isKeyWindow }) {
             backView = UIView(frame: keyWindow.frame)
             
-            
             setup(buttonClose)
             setup(backView)
             
@@ -105,9 +104,7 @@ class PostViewController: UIViewController {
             
             UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut) {
                 self.buttonClose.alpha = 1
-            } completion: { _ in }
-
-
+            }
         }
     }
     
@@ -123,5 +120,4 @@ class PostViewController: UIViewController {
         view.backgroundColor = .darkGray
         view.alpha = 0
     }
-    
 }
